@@ -3,8 +3,10 @@ import DiscountBanner from "@/components/DiscountBanner";
 import ProductList from "@/components/ProductList";
 import { getAllCategories, getAllProducts, getSale } from "@/sanity/helpers";
 
-import Blog from "../blog/page";
+
+// import Blog from "../blog/page";
 import Contact from "../contact/page";
+import Blog from "@/components/Blog";
 
 export default async function Home() {
   const products = await getAllProducts();
