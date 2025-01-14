@@ -2,10 +2,7 @@ import Container from "@/components/Container";
 import DiscountBanner from "@/components/DiscountBanner";
 import ProductList from "@/components/ProductList";
 import { getAllCategories, getAllProducts, getSale } from "@/sanity/helpers";
-
-
-// import Blog from "../blog/page";
-import Contact from "../contact/page";
+import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 
 export default async function Home() {
@@ -15,14 +12,12 @@ export default async function Home() {
 
   return (
     <div>
-
-    <Container className="pb-10">
-      <DiscountBanner sales={sales} />
-      <ProductList title={true} products={products} categories={categories} />
-    </Container>
-    <Blog/>
-    <Contact/>
+      <Container className="pb-10">
+        <DiscountBanner sales={sales} />
+        <ProductList title={true} products={products} categories={categories} />
+      </Container>
+      <Blog />
+      <Contact />
     </div>
-    
   );
 }
